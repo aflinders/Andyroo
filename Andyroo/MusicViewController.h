@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  MusicViewController.h
 //  Andyroo
 //
 //  Created by Andrew Flinders on 2/17/15.
