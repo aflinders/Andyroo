@@ -16,8 +16,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    NSMutableArray *sliders = [NSMutableArray arrayWithCapacity:3];
+    [sliders addObject:self.currentTimeSlider];
+    [sliders addObject:self.currentTimeSlider2];
+    [sliders addObject:self.currentTimeSlider3];
+    self.currentTimeSliders = [NSArray arrayWithArray: sliders];
+    
+    NSMutableArray *elapsedLabels = [NSMutableArray arrayWithCapacity:3];
+    [elapsedLabels addObject:self.timeElapsed];
+    [elapsedLabels addObject:self.timeElapsed2];
+    [elapsedLabels addObject:self.timeElapsed3];
+    self.timesElapsed = [NSArray arrayWithArray: elapsedLabels];
+    
+    NSMutableArray *durationLabels = [NSMutableArray arrayWithCapacity:3];
+    [durationLabels addObject:self.duration];
+    [durationLabels addObject:self.duration2];
+    [durationLabels addObject:self.duration3];
+    self.durations = [NSArray arrayWithArray: durationLabels];
+    
+    NSMutableArray *playButtons = [NSMutableArray arrayWithCapacity:3];
+    [playButtons addObject:self.playButton];
+    [playButtons addObject:self.playButton2];
+    [playButtons addObject:self.playButton3];
+    self.playButtons = [NSArray arrayWithArray: playButtons];
+    
+    self.paused = [NSMutableArray arrayWithArray:@[@TRUE,@TRUE,@TRUE]];
+    
+    NSMutableArray *players = [NSMutableArray arrayWithCapacity:3];
+    
     self.audioPlayer = [[AudioPlayer alloc] init];
-    [self setupAudioPlayer:@"Booster Buddy MP3"];
+    [players addObject:self.audioPlayer];
+    
+    self.audioPlayer2 = [[AudioPlayer alloc] init];
+    [players addObject:self.audioPlayer2];
+    
+    self.audioPlayer3 = [[AudioPlayer alloc] init];
+    [players addObject:self.audioPlayer3];
+    
+    self.audioPlayers = [NSArray arrayWithArray:players];
+    
+    [self setupAudioPlayer:@"Booster Buddy MP3" atIndex:0];
+    [self setupAudioPlayer:@"Wizard Love MP3" atIndex:1];
+    [self setupAudioPlayer:@"Monkeys Bedazzling MP3" atIndex:2];
+    
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,21 +69,42 @@
  * Filename and FileExtension like mp3
  * Loading audioFile and sets the time Labels
  */
-- (void)setupAudioPlayer:(NSString*)fileName
+- (void)setupAudioPlayer:(NSString*)fileName atIndex:(NSUInteger)index
 {
     //insert Filename & FileExtension
     NSString *fileExtension = @"mp3";
     
     //init the Player to get file properties to set the time labels
-    [self.audioPlayer initPlayer:fileName fileExtension:fileExtension];
-    self.currentTimeSlider.maximumValue = [self.audioPlayer getAudioDuration];
+    AudioPlayer *player = self.audioPlayers[index];
+    [player initPlayer:fileName fileExtension:fileExtension];
+    
+    UISlider *slider = self.currentTimeSliders[index];
+    slider.maximumValue = [player getAudioDuration];
     
     //init the current timedisplay and the labels. if a current time was stored
     //for this player then take it and update the time display
-    self.timeElapsed.text = @"0:00";
+    UILabel *elapsedLabel = self.timesElapsed[index];
+    elapsedLabel.text = @"0:00";
     
-    self.duration.text = [NSString stringWithFormat:@"-%@",
-                          [self.audioPlayer timeFormat:[self.audioPlayer getAudioDuration]]];
+    UILabel *durationLabel = self.durations[index];
+    durationLabel.text = [NSString stringWithFormat:@"-%@",
+                          [player timeFormat:[player getAudioDuration]]];
+    
+}
+
+-(void)pauseOtherAudioPlayers:(NSUInteger) playingIndex {
+    
+    int index = 0;
+    for (; index < 3; index++) {
+        if (index == playingIndex)
+            continue;
+        if (![self.paused[index] boolValue]) {
+            [self.playButtons[index] setImage:[UIImage imageNamed:@"play button"]
+                        forState:UIControlStateNormal];
+            [self.audioPlayers[index] pauseAudio];
+            self.paused[index] = @TRUE;
+        }
+    }
     
 }
 
@@ -52,28 +116,37 @@
 - (IBAction)playAudioPressed:(id)playButton
 {
     [self.timer invalidate];
+    
+    int index = 0;
+    for (; index < 3; index++) {
+        if (playButton == self.playButtons[index])
+            break;
+    }
+    
     //play audio for the first time or if pause was pressed
-    if (!self.isPaused) {
-        [self.playButton setImage:[UIImage imageNamed:@"pause button"]
+    if ([self.paused[index] boolValue]) {
+        [playButton setImage:[UIImage imageNamed:@"pause button"]
                                    forState:UIControlStateNormal];
+        
+        [self pauseOtherAudioPlayers:index];
         
         //start a timer to update the time label display
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                       target:self
                                                     selector:@selector(updateTime:)
-                                                    userInfo:nil
+                                                    userInfo:[NSNumber numberWithInt:index]
                                                      repeats:YES];
         
-        [self.audioPlayer playAudio];
-        self.isPaused = TRUE;
+        [self.audioPlayers[index] playAudio];
+        self.paused[index] = @FALSE;
         
     } else {
         //player is paused and Button is pressed again
-        [self.playButton setImage:[UIImage imageNamed:@"play button"]
+        [playButton setImage:[UIImage imageNamed:@"play button"]
                                    forState:UIControlStateNormal];
         
-        [self.audioPlayer pauseAudio];
-        self.isPaused = FALSE;
+        [self.audioPlayers[index] pauseAudio];
+        self.paused[index] = @TRUE;
     }
 }
 
@@ -83,15 +156,22 @@
  * while audio is playing
  */
 - (void)updateTime:(NSTimer *)timer {
-    //to don't update every second. When scrubber is mouseDown the the slider will not set
-    if (!self.scrubbing) {
-        self.currentTimeSlider.value = [self.audioPlayer getCurrentAudioTime];
-    }
-    self.timeElapsed.text = [NSString stringWithFormat:@"%@",
-                             [self.audioPlayer timeFormat:[self.audioPlayer getCurrentAudioTime]]];
+    //to don't update every second. When scrubber is mouseDown the the slider will not set`
     
-    self.duration.text = [NSString stringWithFormat:@"-%@",
-                          [self.audioPlayer timeFormat:[self.audioPlayer getAudioDuration] - [self.audioPlayer getCurrentAudioTime]]];
+    NSNumber *num = timer.userInfo;
+    int index = [num intValue];
+    UISlider *slider = self.currentTimeSliders[index];
+    AudioPlayer *player = self.audioPlayers[index];
+    UILabel *elapsedLabel = self.timesElapsed[index];
+    UILabel *durationLabel = self.durations[index];
+    if (![self.scrubbing[index] boolValue]) {
+        slider.value = [player getCurrentAudioTime];
+    }
+    elapsedLabel.text = [NSString stringWithFormat:@"%@",
+                             [player timeFormat:[player getCurrentAudioTime]]];
+    
+    durationLabel.text = [NSString stringWithFormat:@"-%@",
+                          [player timeFormat:[player getAudioDuration] - [player getCurrentAudioTime]]];
 }
 
 /*
@@ -100,14 +180,23 @@
  */
 - (IBAction)setCurrentTime:(id)scrubber {
     //if scrubbing update the timestate, call updateTime faster not to wait a second and dont repeat it
+    
+    UISlider *slider = scrubber;
+    int index = 0;
+    for (; index < 3; index++) {
+        if (self.currentTimeSliders[index] == slider)
+            break;
+    }
+    
     [NSTimer scheduledTimerWithTimeInterval:0.01
                                      target:self
                                    selector:@selector(updateTime:)
-                                   userInfo:nil
+                                   userInfo:[NSNumber numberWithInt:index]
                                     repeats:NO];
     
-    [self.audioPlayer setCurrentAudioTime:self.currentTimeSlider.value];
-    self.scrubbing = FALSE;
+    AudioPlayer *player = self.audioPlayers[index];
+    [player setCurrentAudioTime:slider.value];
+    self.scrubbing[index] = @FALSE;
 }
 
 /*
@@ -115,7 +204,13 @@
  * to avoid slider update while dragging the slider
  */
 - (IBAction)userIsScrubbing:(id)sender {
-    self.scrubbing = TRUE;
+    UISlider *slider = sender;
+    int index = 0;
+    for (; index < 3; index++) {
+        if (self.currentTimeSliders[index] == slider)
+            break;
+    }
+    self.scrubbing[index] = @TRUE;
 }
 
 - (void)didReceiveMemoryWarning {

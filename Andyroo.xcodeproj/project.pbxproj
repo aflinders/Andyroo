@@ -24,6 +24,8 @@
 		C2716AAA1A93F2CF00758B17 /* AndyrooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716AA91A93F2CF00758B17 /* AndyrooTests.m */; };
 		C2716AC01A95286C00758B17 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716ABF1A95286C00758B17 /* VideosViewController.m */; };
 		C2716AC11A95286C00758B17 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716ABF1A95286C00758B17 /* VideosViewController.m */; };
+		C2C374211AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */; };
+		C2C374221AB9CD5C0078CA3A /* Wizard Love MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */; };
 		C2E0A2341AA7C163009ACB15 /* Booster Buddy MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		C2716AA91A93F2CF00758B17 /* AndyrooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndyrooTests.m; sourceTree = "<group>"; };
 		C2716ABF1A95286C00758B17 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
 		C2716AC21A95289400758B17 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
+		C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Monkeys Bedazzling MP3.mp3"; sourceTree = "<group>"; };
+		C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wizard Love MP3.mp3"; sourceTree = "<group>"; };
 		C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Booster Buddy MP3.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +136,8 @@
 		C2716A8A1A93F2CF00758B17 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */,
+				C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */,
 				C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */,
 				C2716A8B1A93F2CF00758B17 /* Info.plist */,
 				C2716A8C1A93F2CF00758B17 /* main.m */,
@@ -236,10 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C374221AB9CD5C0078CA3A /* Wizard Love MP3.mp3 in Resources */,
 				C224E4A51A96AD0F003F5489 /* Main.storyboard in Resources */,
 				C2716A991A93F2CF00758B17 /* Main.storyboard in Resources */,
 				C2716A9E1A93F2CF00758B17 /* LaunchScreen.xib in Resources */,
 				C224E4A31A96AD0F003F5489 /* LaunchScreen.xib in Resources */,
+				C2C374211AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 in Resources */,
 				C2716A9B1A93F2CF00758B17 /* Images.xcassets in Resources */,
 				C2E0A2341AA7C163009ACB15 /* Booster Buddy MP3.mp3 in Resources */,
 			);
