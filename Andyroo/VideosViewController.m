@@ -9,6 +9,7 @@
 #import "VideosViewController.h"
 
 @interface VideosViewController ()
+
 @property (weak, nonatomic) IBOutlet UIWebView *videoView;
 @property (weak, nonatomic) IBOutlet UIWebView *video2View;
 

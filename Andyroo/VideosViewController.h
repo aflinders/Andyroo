@@ -10,8 +10,5 @@
 
 @interface VideosViewController : UIViewController
 
-- (IBAction)openAndyrooDotCom:(id)sender;
-- (IBAction)openAndyrooYouTube:(id)sender;
-
 
 @end

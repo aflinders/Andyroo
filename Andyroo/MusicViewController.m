@@ -10,6 +10,19 @@
 
 @interface MusicViewController ()
 
+@property (nonatomic, strong) AudioPlayer *audioPlayer;
+@property (nonatomic, strong) AudioPlayer *audioPlayer2;
+@property (nonatomic, strong) AudioPlayer *audioPlayer3;
+
+@property NSArray *audioPlayers;
+@property NSArray *currentTimeSliders;
+@property NSArray *durations;
+@property NSArray *playButtons;
+@property NSArray *timesElapsed;
+@property NSMutableArray *paused;
+@property NSMutableArray *scrubbing;
+@property NSTimer *timer;
+
 @end
 
 @implementation MusicViewController
@@ -65,9 +78,8 @@
 }
 
 /*
- * Setup the AudioPlayer with
- * Filename and FileExtension like mp3
- * Loading audioFile and sets the time Labels
+ * Setup the audio player with MP3 file
+ * and initialize the time labels.
  */
 - (void)setupAudioPlayer:(NSString*)fileName atIndex:(NSUInteger)index
 {
@@ -92,6 +104,11 @@
     
 }
 
+/*
+ * Pause all other audio players except
+ * for the one at the playingIndex.
+ */
+
 -(void)pauseOtherAudioPlayers:(NSUInteger) playingIndex {
     
     int index = 0;
@@ -111,7 +128,7 @@
 /*
  * PlayButton is pressed
  * plays or pauses the audio and sets
- * the play/pause Text of the Button
+ * the play/pause image of the button
  */
 - (IBAction)playAudioPressed:(id)playButton
 {
@@ -123,7 +140,7 @@
             break;
     }
     
-    //play audio for the first time or if pause was pressed
+    //play audio for the first time or if paused
     if ([self.paused[index] boolValue]) {
         [playButton setImage:[UIImage imageNamed:@"pause button"]
                                    forState:UIControlStateNormal];
@@ -141,7 +158,7 @@
         self.paused[index] = @FALSE;
         
     } else {
-        //player is paused and Button is pressed again
+        //pause the audio and set button to play again
         [playButton setImage:[UIImage imageNamed:@"play button"]
                                    forState:UIControlStateNormal];
         
@@ -156,7 +173,6 @@
  * while audio is playing
  */
 - (void)updateTime:(NSTimer *)timer {
-    //to don't update every second. When scrubber is mouseDown the the slider will not set`
     
     NSNumber *num = timer.userInfo;
     int index = [num intValue];
@@ -175,11 +191,10 @@
 }
 
 /*
- * Sets the current value of the slider/scrubber
- * to the audio file when slider/scrubber is used
+ * Sets the current value of the slider
+ * to the audio file when slider is used
  */
 - (IBAction)setCurrentTime:(id)scrubber {
-    //if scrubbing update the timestate, call updateTime faster not to wait a second and dont repeat it
     
     UISlider *slider = scrubber;
     int index = 0;
@@ -217,6 +232,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+ * Opens the Andyroo music catalog in iTunes.
+ */
 
 - (IBAction)openAndyrooiTunes:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/artist/andyroo/id567828684"]];
