@@ -40,7 +40,21 @@
                         <constraints>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="2se-b5-gHs"/>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="MD7-4M-RB2"/>
+                            <constraint firstItem="RMk-1j-GPb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="NFO-r7-JUJ"/>
+                            <constraint firstItem="RMk-1j-GPb" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="2" id="XR1-Jq-U7U"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NFO-r7-JUJ"/>
+                                <exclude reference="XR1-Jq-U7U"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="NFO-r7-JUJ"/>
+                                <include reference="XR1-Jq-U7U"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
                 </viewController>
@@ -123,7 +137,7 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
                                 </variation>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-5b-hdb">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-5b-hdb">
                                 <rect key="frame" x="93" y="226" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1cl-ZP-fZH"/>
@@ -192,6 +206,9 @@
                                         <exclude reference="jFp-Tx-xUZ"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="393" y="186" width="142" height="31"/>
+                                </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="jFp-Tx-xUZ"/>
@@ -221,7 +238,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact" misplaced="YES">
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="359" y="190" width="30" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -237,15 +254,6 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-fM-udj">
-                                <rect key="frame" x="8" y="315" width="41" height="41"/>
-                                <state key="normal" image="play button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAudioPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4Cg-wk-zGx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-OC-poT">
                                 <rect key="frame" x="395" y="462" width="185" height="69"/>
                                 <constraints>
@@ -285,7 +293,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-rK-Auh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-rK-Auh">
                                 <rect key="frame" x="241" y="230" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -294,6 +302,18 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-fM-udj">
+                                <rect key="frame" x="8" y="315" width="41" height="41"/>
+                                <state key="normal" image="play button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="310" y="179" width="41" height="41"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playAudioPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4Cg-wk-zGx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25490197539329529" green="0.0" blue="0.75294125080108643" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
