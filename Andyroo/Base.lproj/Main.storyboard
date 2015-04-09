@@ -140,7 +140,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-5b-hdb">
                                 <rect key="frame" x="93" y="226" width="142" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1cl-ZP-fZH"/>
+                                    <constraint firstAttribute="width" constant="230" id="1cl-ZP-fZH"/>
                                     <constraint firstAttribute="width" constant="138" id="Wwj-eO-Cwh"/>
                                 </constraints>
                                 <variation key="default">
@@ -197,7 +197,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hio-zt-rol">
                                 <rect key="frame" x="93" y="321" width="142" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1Fl-Eq-jdT"/>
+                                    <constraint firstAttribute="width" constant="230" id="1Fl-Eq-jdT"/>
                                     <constraint firstAttribute="width" constant="138" id="jFp-Tx-xUZ"/>
                                 </constraints>
                                 <variation key="default">
