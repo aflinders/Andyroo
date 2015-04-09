@@ -127,10 +127,17 @@
                                 <rect key="frame" x="93" y="226" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1cl-ZP-fZH"/>
+                                    <constraint firstAttribute="width" constant="138" id="Wwj-eO-Cwh"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="1cl-ZP-fZH"/>
+                                        <exclude reference="Wwj-eO-Cwh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Wwj-eO-Cwh"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -149,11 +156,18 @@
                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGL-nH-9em">
                                 <rect key="frame" x="93" y="132" width="142" height="31"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="46l-Rm-yCz"/>
                                     <constraint firstAttribute="width" constant="230" id="g0s-v8-jvY"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="46l-Rm-yCz"/>
                                         <exclude reference="g0s-v8-jvY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="46l-Rm-yCz"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -170,10 +184,17 @@
                                 <rect key="frame" x="93" y="321" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1Fl-Eq-jdT"/>
+                                    <constraint firstAttribute="width" constant="138" id="jFp-Tx-xUZ"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="1Fl-Eq-jdT"/>
+                                        <exclude reference="jFp-Tx-xUZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jFp-Tx-xUZ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
