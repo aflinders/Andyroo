@@ -14,6 +14,7 @@
 		C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C224E4AB1A96B073003F5489 /* AudioPlayer.m */; };
 		C224E4AD1A96B073003F5489 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C224E4AB1A96B073003F5489 /* AudioPlayer.m */; };
 		C224E4AE1A96CF60003F5489 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A951A93F2CF00758B17 /* MusicViewController.m */; };
+		C22D832F1AE7EAC800B61755 /* BioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22D832E1AE7EAC800B61755 /* BioViewController.m */; };
 		C2716A8D1A93F2CF00758B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8C1A93F2CF00758B17 /* main.m */; };
 		C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8F1A93F2CF00758B17 /* AppDelegate.m */; };
 		C2716A931A93F2CF00758B17 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A921A93F2CF00758B17 /* FirstViewController.m */; };
@@ -44,6 +45,8 @@
 		C224E4A21A96AD0F003F5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		C224E4AB1A96B073003F5489 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		C22D832D1AE7EAC800B61755 /* BioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BioViewController.h; sourceTree = "<group>"; };
+		C22D832E1AE7EAC800B61755 /* BioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BioViewController.m; sourceTree = "<group>"; };
 		C2716A871A93F2CF00758B17 /* Andyroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Andyroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2716A8B1A93F2CF00758B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2716A8C1A93F2CF00758B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
 				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
 				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
+				C22D832D1AE7EAC800B61755 /* BioViewController.h */,
+				C22D832E1AE7EAC800B61755 /* BioViewController.m */,
 			);
 			path = Andyroo;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */,
 				C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */,
 				C2716A931A93F2CF00758B17 /* FirstViewController.m in Sources */,
+				C22D832F1AE7EAC800B61755 /* BioViewController.m in Sources */,
 				C2716A8D1A93F2CF00758B17 /* main.m in Sources */,
 				C2716AC01A95286C00758B17 /* VideosViewController.m in Sources */,
 			);

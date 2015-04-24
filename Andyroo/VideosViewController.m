@@ -11,7 +11,6 @@
 @interface VideosViewController ()
 
 @property (weak, nonatomic) IBOutlet UIWebView *videoView;
-@property (weak, nonatomic) IBOutlet UIWebView *video2View;
 
 @end
 
@@ -27,12 +26,6 @@
     NSURL *url = [NSURL URLWithString:@"http://www.youtube.com/watch?v=V5UUHbRzjek"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.videoView loadRequest:request];
-    
-    url = [NSURL URLWithString:@"http://www.youtube.com/watch?v=5smoXLztStE"];
-    request = [NSURLRequest requestWithURL:url];
-    [self.video2View loadRequest:request];
-
-        
 }
 
 - (IBAction)openAndyrooDotCom:(id)sender {
