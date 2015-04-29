@@ -7,10 +7,15 @@
 //
 
 #import "VideosViewController.h"
+#import "VideoPickerViewController.h"
+#import "Reachability.h"
 
 @interface VideosViewController ()
 
 @property (weak, nonatomic) IBOutlet UIWebView *videoView;
+@property (strong, nonatomic) NSDictionary *videos;
+@property (strong, nonatomic) NSString *selectedVideo;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end
 
@@ -18,14 +23,63 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self initVideos];
+    
+    self.selectedVideo = @"Booster Buddy";
+    
+    NSMutableDictionary *videoMap = [[NSMutableDictionary alloc] init];
+    [videoMap setValue:@"www.youtube.com/watch?v=V5UUHbRzjek" forKey:@"Booster Buddy"];
+    [videoMap setValue:@"www.youtube.com/watch?v=5smoXLztStE" forKey:@"I Wish I Were a Princess"];
+    [videoMap setValue:@"www.youtube.com/watch?v=_j1uw_HyPI4" forKey:@"Jammin' TQ5"];
+    [videoMap setValue:@"www.youtube.com/watch?v=oFGzsQwDnrw" forKey:@"2Shybaby 2"];
+    [videoMap setValue:@"www.youtube.com/watch?v=WslyRrA6T4w" forKey:@"Midnight Casanova"];
+    [videoMap setValue:@"www.youtube.com/watch?v=5uh9-2FDu1s" forKey:@"Booster Buddy Jam"];
+    [videoMap setValue:@"www.youtube.com/watch?v=_ytclAOUrfo" forKey:@"Monkeys Bedazzling Jam"];
+    
+    self.videos = [NSDictionary dictionaryWithDictionary:videoMap];
+    
+    [self initVideo];
 }
 
-- (void)initVideos {
-    NSURL *url = [NSURL URLWithString:@"http://www.youtube.com/watch?v=V5UUHbRzjek"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [self.videoView loadRequest:request];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"PickVideo"])
+    {
+        // Get reference to the destination view controller
+        VideoPickerViewController *dest = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here
+        dest.selectedVideo = self.selectedVideo;
+    }
+}
+
+- (IBAction)unwindToVideo:(UIStoryboardSegue *)segue {
+    VideoPickerViewController *source = [segue sourceViewController];
+    if ([source.selectedVideo length] > 0) {
+        self.selectedVideo = source.selectedVideo;
+        [self initVideo];
+    }
+}
+
+- (void)initVideo {
+    
+    // Check Internet connection
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        self.statusLabel.text = @"! No Internet connection !";
+        [self.statusLabel setHidden:false];
+    }
+    else {
+        self.statusLabel.text = @"Loading video...";
+        [self.statusLabel setHidden:false];
+    
+        NSString *urlStr = [NSString stringWithFormat:@"%@%@", @"https://", [self.videos valueForKey:self.selectedVideo]];
+        NSURL *url = [NSURL URLWithString:urlStr];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.videoView setDelegate:self];
+        [self.videoView loadRequest:request];
+    }
 }
 
 - (IBAction)openAndyrooDotCom:(id)sender {
@@ -44,5 +98,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark UIWebView Delegate
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [self.statusLabel setHidden:true];
+}
+
+
+
 
 @end

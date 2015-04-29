@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-sR-eLh">
-                                <rect key="frame" x="204" y="28" width="58" height="24"/>
+                                <rect key="frame" x="204" y="27" width="64" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="GBq-xR-Nve"/>
                                 </constraints>
@@ -639,16 +639,29 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="ugr-Tu-UkR" kind="presentation" identifier="PickVideo" id="VXH-pP-fgF"/>
+                                </connections>
                             </button>
                             <webView contentMode="scaleToFill" restorationIdentifier="BoosterBuddyVideo" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-2b-wkh">
                                 <rect key="frame" x="21" y="80" width="558" height="381"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="! No Internet Connection !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-lF-xEH" userLabel="Status Label">
+                                <rect key="frame" x="201" y="260" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.24270288259963879" blue="0.2799820659618375" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.090196080505847931" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="fvC-2b-wkh" firstAttribute="top" secondItem="dqI-OJ-8s6" secondAttribute="bottom" constant="15" id="92C-Cm-1sk"/>
                             <constraint firstItem="fvC-2b-wkh" firstAttribute="leading" secondItem="13N-1g-m2j" secondAttribute="leadingMargin" constant="5" id="FX1-O4-V4q"/>
+                            <constraint firstItem="Ro3-lF-xEH" firstAttribute="centerX" secondItem="dqI-OJ-8s6" secondAttribute="centerX" id="Fzv-ql-AVV"/>
                             <constraint firstItem="UTo-oG-AKd" firstAttribute="leading" secondItem="13N-1g-m2j" secondAttribute="leadingMargin" constant="5" id="IqJ-32-IZa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ihl-BY-g4i" secondAttribute="trailing" constant="5" id="Jur-cI-uaI"/>
                             <constraint firstItem="Ihl-BY-g4i" firstAttribute="leading" secondItem="UTo-oG-AKd" secondAttribute="trailing" constant="5" id="QKW-jc-HRs"/>
@@ -656,6 +669,7 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                             <constraint firstItem="Ihl-BY-g4i" firstAttribute="top" secondItem="UTo-oG-AKd" secondAttribute="top" id="Z9o-q7-a1Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fvC-2b-wkh" secondAttribute="trailing" constant="5" id="aCJ-OH-jSh"/>
                             <constraint firstAttribute="centerX" secondItem="dqI-OJ-8s6" secondAttribute="centerX" id="eN1-zD-aGx"/>
+                            <constraint firstItem="Ro3-lF-xEH" firstAttribute="centerY" secondItem="fvC-2b-wkh" secondAttribute="centerY" id="gFf-LK-fZr"/>
                             <constraint firstItem="fvC-2b-wkh" firstAttribute="top" secondItem="dqI-OJ-8s6" secondAttribute="bottom" constant="10" id="jyf-Jh-CBr"/>
                             <constraint firstItem="dqI-OJ-8s6" firstAttribute="top" secondItem="Mvo-0k-e1t" secondAttribute="bottom" constant="15" id="qNb-ku-jF8" userLabel="Vertical Space - (10) - Pick an ANDYROO music video: - Top Layout Guide"/>
                             <constraint firstItem="6lS-R5-Tf4" firstAttribute="top" secondItem="Ihl-BY-g4i" secondAttribute="bottom" constant="5" id="yny-Rr-8fs"/>
@@ -669,12 +683,107 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                     </view>
                     <tabBarItem key="tabBarItem" title="Videos" image="videos_icon" id="9pg-Kd-rfV"/>
                     <connections>
+                        <outlet property="statusLabel" destination="Ro3-lF-xEH" id="UjL-sl-rZw"/>
                         <outlet property="videoView" destination="fvC-2b-wkh" id="ZIk-za-hOz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZd-JD-ZMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="644"/>
+            <point key="canvasLocation" x="368" y="1041"/>
+        </scene>
+        <!--VideoPicker-->
+        <scene sceneID="vcY-WL-Cv2">
+            <objects>
+                <viewController id="ugr-Tu-UkR" userLabel="VideoPicker" customClass="VideoPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GXM-lp-iYz"/>
+                        <viewControllerLayoutGuide type="bottom" id="qMW-Kf-QLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ytd-AV-fd7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF8-Bj-F8k">
+                                <rect key="frame" x="10" y="30" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="SkI-HF-xcn" kind="unwind" unwindAction="unwindToVideo:" id="6VX-Cw-zyX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-z3-VOc">
+                                <rect key="frame" x="555" y="30" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="SkI-HF-xcn" kind="unwind" unwindAction="unwindToVideo:" id="iQk-hu-AK4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a music video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csd-FE-dFU">
+                                <rect key="frame" x="224" y="34" width="152" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0A-fn-fBA">
+                                <rect key="frame" x="0.0" y="68" width="600" height="162"/>
+                                <color key="tintColor" red="0.0" green="0.86274516580000005" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ugr-Tu-UkR" id="TKG-nz-CHY"/>
+                                    <outlet property="delegate" destination="ugr-Tu-UkR" id="xdr-SF-Qxk"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.86274516580000005" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="r0A-fn-fBA" firstAttribute="top" secondItem="GXM-lp-iYz" secondAttribute="bottom" id="3YR-y9-OYe"/>
+                            <constraint firstItem="yF8-Bj-F8k" firstAttribute="centerY" secondItem="csd-FE-dFU" secondAttribute="centerY" id="55Z-zc-Usv"/>
+                            <constraint firstAttribute="trailing" secondItem="r0A-fn-fBA" secondAttribute="trailing" id="8DL-4i-dLV"/>
+                            <constraint firstItem="r0A-fn-fBA" firstAttribute="leading" secondItem="Ytd-AV-fd7" secondAttribute="leading" id="Brb-Gw-MiK"/>
+                            <constraint firstAttribute="centerX" secondItem="csd-FE-dFU" secondAttribute="centerX" id="DhU-0a-1M5"/>
+                            <constraint firstItem="yF8-Bj-F8k" firstAttribute="leading" secondItem="Ytd-AV-fd7" secondAttribute="leading" constant="10" id="L4M-qa-fr9"/>
+                            <constraint firstItem="r0A-fn-fBA" firstAttribute="top" secondItem="4PB-z3-VOc" secondAttribute="bottom" constant="10" id="Ohl-Y3-dli"/>
+                            <constraint firstItem="r0A-fn-fBA" firstAttribute="top" secondItem="yF8-Bj-F8k" secondAttribute="bottom" constant="8" symbolic="YES" id="WDM-pH-WfH"/>
+                            <constraint firstItem="yF8-Bj-F8k" firstAttribute="top" secondItem="GXM-lp-iYz" secondAttribute="bottom" constant="10" id="eYq-uv-2YM"/>
+                            <constraint firstAttribute="trailing" secondItem="4PB-z3-VOc" secondAttribute="trailing" constant="10" id="ruE-eA-TF2"/>
+                            <constraint firstItem="4PB-z3-VOc" firstAttribute="top" secondItem="GXM-lp-iYz" secondAttribute="bottom" constant="10" id="tAG-rR-ODU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3YR-y9-OYe"/>
+                                <exclude reference="Ohl-Y3-dli"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="OrK-gk-yrg"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Pick a music video" id="3QX-Fc-8HG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yKz-oZ-7cf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qr1-8A-Kbj"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="yF8-Bj-F8k" id="dqv-sU-9K7"/>
+                        <outlet property="pickerView" destination="r0A-fn-fBA" id="Nqz-ZE-aFt"/>
+                        <outlet property="saveButton" destination="4PB-z3-VOc" id="jxP-WA-N46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pv7-XS-zOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SkI-HF-xcn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="1036"/>
         </scene>
     </scenes>
     <resources>

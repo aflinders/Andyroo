@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideosViewController : UIViewController
+@interface VideosViewController : UIViewController <UIWebViewDelegate>
 
+- (IBAction)unwindToVideo:(UIStoryboardSegue *)segue;
 
 @end
