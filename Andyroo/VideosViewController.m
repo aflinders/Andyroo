@@ -24,18 +24,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.selectedVideo = @"Booster Buddy";
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    self.selectedVideo = [userDefaults stringForKey:@"SelectedVideo"];
+
+    if (self.selectedVideo == nil) {
+        self.selectedVideo = @"Booster Buddy";
+    }
     
-    NSMutableDictionary *videoMap = [[NSMutableDictionary alloc] init];
-    [videoMap setValue:@"www.youtube.com/watch?v=V5UUHbRzjek" forKey:@"Booster Buddy"];
-    [videoMap setValue:@"www.youtube.com/watch?v=5smoXLztStE" forKey:@"I Wish I Were a Princess"];
-    [videoMap setValue:@"www.youtube.com/watch?v=_j1uw_HyPI4" forKey:@"Jammin' TQ5"];
-    [videoMap setValue:@"www.youtube.com/watch?v=oFGzsQwDnrw" forKey:@"2Shybaby 2"];
-    [videoMap setValue:@"www.youtube.com/watch?v=WslyRrA6T4w" forKey:@"Midnight Casanova"];
-    [videoMap setValue:@"www.youtube.com/watch?v=5uh9-2FDu1s" forKey:@"Booster Buddy Jam"];
-    [videoMap setValue:@"www.youtube.com/watch?v=_ytclAOUrfo" forKey:@"Monkeys Bedazzling Jam"];
+    self.videos = [userDefaults dictionaryForKey:@"VideoURLs"];
     
-    self.videos = [NSDictionary dictionaryWithDictionary:videoMap];
+    if (self.videos == nil) {
+        NSMutableDictionary *videoMap = [[NSMutableDictionary alloc] initWithCapacity:7];
+        [videoMap setValue:@"www.youtube.com/watch?v=V5UUHbRzjek" forKey:@"Booster Buddy"];
+        [videoMap setValue:@"www.youtube.com/watch?v=5smoXLztStE" forKey:@"I Wish I Were a Princess"];
+        [videoMap setValue:@"www.youtube.com/watch?v=_j1uw_HyPI4" forKey:@"Jammin' TQ5"];
+        [videoMap setValue:@"www.youtube.com/watch?v=oFGzsQwDnrw" forKey:@"2Shybaby 2"];
+        [videoMap setValue:@"www.youtube.com/watch?v=WslyRrA6T4w" forKey:@"Midnight Casanova"];
+        [videoMap setValue:@"www.youtube.com/watch?v=5uh9-2FDu1s" forKey:@"Booster Buddy Jam"];
+        [videoMap setValue:@"www.youtube.com/watch?v=_ytclAOUrfo" forKey:@"Monkeys Bedazzling Jam"];
+        
+        self.videos = [NSDictionary dictionaryWithDictionary:videoMap];
+        
+        [userDefaults setObject:self.videos forKey:@"VideoURLs"];
+        [userDefaults synchronize];
+    }
     
     [self initVideo];
 }

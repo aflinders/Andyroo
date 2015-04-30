@@ -11,7 +11,7 @@
 @interface VideoPickerViewController ()
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (strong, nonatomic) NSArray *dataSourceArray;
+@property (strong, nonatomic) NSArray *videosArray;
 @property (strong, nonatomic) NSDictionary *videos;
 
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
@@ -23,15 +23,23 @@
 @implementation VideoPickerViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];    
+    [super viewDidLoad];
     
-    self.dataSourceArray = @[@"Booster Buddy",
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    self.videosArray = [userDefaults stringArrayForKey:@"VideosArray"];
+    
+    if (self.videosArray == nil) {
+        self.videosArray = @[@"Booster Buddy",
                              @"I Wish I Were a Princess",
                              @"Jammin' TQ5",
                              @"2Shybaby 2",
                              @"Booster Buddy Jam",
                              @"Midnight Casanova",
                              @"Monkeys Bedazzling Jam"];
+        
+        [userDefaults setObject:self.videosArray forKey:@"VideosArray"];
+        [userDefaults synchronize];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,7 +48,14 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
-    NSUInteger index = [self.dataSourceArray indexOfObjectIdenticalTo:self.selectedVideo];
+    NSUInteger index = 0;
+    for (int i = 0; i < [self.videosArray count]; i++) {
+        NSString *video = [self.videosArray objectAtIndex:i];
+        if ([video isEqualToString:self.selectedVideo]) {
+            index = i;
+            break;
+        }
+    }
     [self.pickerView selectRow:index inComponent:0 animated:YES];
 }
 
@@ -53,27 +68,22 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-
 {
-    return  self.dataSourceArray.count;
+    return  self.videosArray.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return self.dataSourceArray[row];
-    
-    
+    return self.videosArray[row];
 }
 
 #pragma mark PickerView Delegate
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.selectedVideo = self.dataSourceArray[row];
+    self.selectedVideo = self.videosArray[row];
 }
  
-
-
 
 #pragma mark - Navigation
 
@@ -82,6 +92,11 @@
     // if user cancels, set selectedVideo to nil
     if (sender == self.cancelButton) {
         self.selectedVideo = nil;
+    }
+    else {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:self.selectedVideo forKey:@"SelectedVideo"];
+        [userDefaults synchronize];
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
