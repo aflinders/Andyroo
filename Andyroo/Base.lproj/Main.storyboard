@@ -9,7 +9,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -27,16 +27,47 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-xJ-N88">
+                                <rect key="frame" x="538" y="477" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3uo-Y2-ME0"/>
+                                    <constraint firstAttribute="width" constant="40" id="JXf-50-1EN"/>
+                                    <constraint firstAttribute="height" constant="60" id="oCJ-GK-pMm"/>
+                                    <constraint firstAttribute="width" constant="60" id="tJD-z0-muR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon-Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oCJ-GK-pMm"/>
+                                        <exclude reference="tJD-z0-muR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="3uo-Y2-ME0"/>
+                                        <exclude reference="JXf-50-1EN"/>
+                                        <include reference="oCJ-GK-pMm"/>
+                                        <include reference="tJD-z0-muR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="pGL-Oi-g06" kind="presentation" id="FQp-dS-6Mt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="B9M-7B-2po"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hWQ-xJ-N88" secondAttribute="trailing" constant="6" id="MYS-Pf-w78"/>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Qsf-ij-5HU"/>
                             <constraint firstAttribute="width" secondItem="RMk-1j-GPb" secondAttribute="width" id="S7s-iG-5I0"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="RMk-1j-GPb" secondAttribute="bottom" id="ZVb-it-Xni"/>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="2:3" priority="999" id="dR1-Yw-zs1"/>
                             <constraint firstItem="tNg-6f-oxb" firstAttribute="centerX" secondItem="RMk-1j-GPb" secondAttribute="centerX" id="t77-1h-h0O"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="tNg-6f-oxb" secondAttribute="bottom" constant="8" id="tGr-wX-myG" userLabel="Vertical Space - (10) - Bottom Layout Guide - Copyright 2015. ANDYROO. All rights reserved."/>
+                            <constraint firstItem="tNg-6f-oxb" firstAttribute="top" secondItem="hWQ-xJ-N88" secondAttribute="bottom" constant="9" id="yvU-xl-UeW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -53,7 +84,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-320.25"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="8dy-v3-SkB">
+            <objects>
+                <viewController id="pGL-Oi-g06" userLabel="Info" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dp-lL-CGa"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRv-9b-seS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kd6-bQ-7RI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz2-y3-81x">
+                                <rect key="frame" x="552" y="30" width="38" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="lTX-3P-Jm1" kind="unwind" unwindAction="unwindToHome:" id="9E3-hm-Ti7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc1-jX-jhJ">
+                                <rect key="frame" x="21" y="65" width="568" height="530"/>
+                                <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Andyroo iOS application
+
+The Andyroo application is for those who are interested in my music band Andyroo. I don't believe there are any or many apps dedicated to the music of a single music group, and this is a way for me to demo my music and videos, offer a musical biography and provide band updates and tour information.
+
+The Andyroo app consists of 4 tabbed views: Home, Music, Videos, and Bio. The Music view embeds audio players for 3 of my songs and a button link to my iTunes catalog for digital music downloads. The Bio view gives a biography of my life as a musician and computer scientist. The Videos view embeds a web-view for watching my music videos and button links to my webpage ANDYROO.COM and my YouTube channel. This view requires an Internet connection as videos are streamed live from YouTube.
+
+The best feature of this free application is that it embeds high-quality digital recordings of 3 of my songs. In the next version, the Andyroo app will synchronize with my Andyroo.com web domain to download 3 different songs on a rotating basis for variety. The next version will also feature a Tour+ tab view that pulls band updates and tour information, and the music video list will also be updated and expanded through synchronization with Andyroo.com. Enjoy!
+
+Love,
+Andyroo</mutableString>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fc1-jX-jhJ" firstAttribute="top" secondItem="hz2-y3-81x" secondAttribute="bottom" constant="5" id="4WD-24-d9o"/>
+                            <constraint firstItem="hz2-y3-81x" firstAttribute="top" secondItem="6dp-lL-CGa" secondAttribute="bottom" constant="10" id="HLY-LO-ENR"/>
+                            <constraint firstItem="Fc1-jX-jhJ" firstAttribute="leading" secondItem="kd6-bQ-7RI" secondAttribute="leadingMargin" constant="5" id="VL8-XR-qt3"/>
+                            <constraint firstAttribute="trailing" secondItem="hz2-y3-81x" secondAttribute="trailing" constant="10" id="VdK-he-p3w"/>
+                            <constraint firstItem="Fc1-jX-jhJ" firstAttribute="trailing" secondItem="kd6-bQ-7RI" secondAttribute="trailingMargin" constant="5" id="euM-3u-GR9"/>
+                            <constraint firstItem="fRv-9b-seS" firstAttribute="top" secondItem="Fc1-jX-jhJ" secondAttribute="bottom" constant="5" id="veB-3O-WID"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Fc1-jX-jhJ" id="jT0-V6-I5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0f3-PQ-W0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lTX-3P-Jm1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="-206"/>
         </scene>
         <!--Music-->
         <scene sceneID="wg7-f3-ORb">
@@ -792,6 +888,7 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
         <image name="AndyrooTourPoster" width="640" height="960"/>
         <image name="ItunesIcon" width="368" height="137"/>
         <image name="YouTube" width="75" height="75"/>
+        <image name="icon-Info" width="512" height="512"/>
         <image name="music_note" width="30" height="30"/>
         <image name="pencil" width="30" height="30"/>
         <image name="play button" width="41" height="41"/>

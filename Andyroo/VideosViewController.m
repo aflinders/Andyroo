@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Retrieve the list of music videos from user defaults.
+    // In next version, app will sync with Andyroo.com to retrieve updated list.
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.selectedVideo = [userDefaults stringForKey:@"SelectedVideo"];
 
@@ -34,6 +36,8 @@
     self.videos = [userDefaults dictionaryForKey:@"VideoURLs"];
     
     if (self.videos == nil) {
+        
+        // This is the standard set of music videos. Save them to user defaults.
         NSMutableDictionary *videoMap = [[NSMutableDictionary alloc] initWithCapacity:7];
         [videoMap setValue:@"www.youtube.com/watch?v=V5UUHbRzjek" forKey:@"Booster Buddy"];
         [videoMap setValue:@"www.youtube.com/watch?v=5smoXLztStE" forKey:@"I Wish I Were a Princess"];

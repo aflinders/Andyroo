@@ -25,10 +25,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Retrieve the list of music videos from user defaults.
+    // In next version, app will sync with Andyroo.com to retrieve updated list.
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.videosArray = [userDefaults stringArrayForKey:@"VideosArray"];
     
     if (self.videosArray == nil) {
+        // This is the standard set of music videos. Save them to user defaults.
         self.videosArray = @[@"Booster Buddy",
                              @"I Wish I Were a Princess",
                              @"Jammin' TQ5",
@@ -48,8 +51,10 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+    
+    // Set the picker view to the currently selected video.
     NSUInteger index = 0;
-    for (int i = 0; i < [self.videosArray count]; i++) {
+    for (NSUInteger i = 0; i < [self.videosArray count]; i++) {
         NSString *video = [self.videosArray objectAtIndex:i];
         if ([video isEqualToString:self.selectedVideo]) {
             index = i;
@@ -94,6 +99,7 @@
         self.selectedVideo = nil;
     }
     else {
+        // Save the selected video to user defaults.
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:self.selectedVideo forKey:@"SelectedVideo"];
         [userDefaults synchronize];

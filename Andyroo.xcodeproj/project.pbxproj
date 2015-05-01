@@ -20,7 +20,7 @@
 		C2538EB01AF023AF00F703E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2538EAF1AF023AF00F703E9 /* CoreData.framework */; };
 		C2716A8D1A93F2CF00758B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8C1A93F2CF00758B17 /* main.m */; };
 		C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8F1A93F2CF00758B17 /* AppDelegate.m */; };
-		C2716A931A93F2CF00758B17 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A921A93F2CF00758B17 /* FirstViewController.m */; };
+		C2716A931A93F2CF00758B17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A921A93F2CF00758B17 /* HomeViewController.m */; };
 		C2716A961A93F2CF00758B17 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A951A93F2CF00758B17 /* MusicViewController.m */; };
 		C2716A991A93F2CF00758B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2716A971A93F2CF00758B17 /* Main.storyboard */; };
 		C2716A9B1A93F2CF00758B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2716A9A1A93F2CF00758B17 /* Images.xcassets */; };
@@ -28,6 +28,7 @@
 		C2716AAA1A93F2CF00758B17 /* AndyrooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716AA91A93F2CF00758B17 /* AndyrooTests.m */; };
 		C2716AC01A95286C00758B17 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716ABF1A95286C00758B17 /* VideosViewController.m */; };
 		C2716AC11A95286C00758B17 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716ABF1A95286C00758B17 /* VideosViewController.m */; };
+		C2AEFABA1AF3CA8D00740285 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */; };
 		C2C374211AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */; };
 		C2C374221AB9CD5C0078CA3A /* Wizard Love MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */; };
 		C2E0A2341AA7C163009ACB15 /* Booster Buddy MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */; };
@@ -60,8 +61,8 @@
 		C2716A8C1A93F2CF00758B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2716A8E1A93F2CF00758B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2716A8F1A93F2CF00758B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2716A911A93F2CF00758B17 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C2716A921A93F2CF00758B17 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C2716A911A93F2CF00758B17 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C2716A921A93F2CF00758B17 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C2716A941A93F2CF00758B17 /* MusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		C2716A951A93F2CF00758B17 /* MusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		C2716A981A93F2CF00758B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +73,8 @@
 		C2716AA91A93F2CF00758B17 /* AndyrooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndyrooTests.m; sourceTree = "<group>"; };
 		C2716ABF1A95286C00758B17 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
 		C2716AC21A95289400758B17 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
+		C2AEFAB81AF3CA8D00740285 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Monkeys Bedazzling MP3.mp3"; sourceTree = "<group>"; };
 		C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wizard Love MP3.mp3"; sourceTree = "<group>"; };
 		C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Booster Buddy MP3.mp3"; sourceTree = "<group>"; };
@@ -132,8 +135,10 @@
 				C240DCB71AF1369A002C7AB9 /* Reachability.h */,
 				C240DCB81AF1369A002C7AB9 /* Reachability.m */,
 				C2716A8F1A93F2CF00758B17 /* AppDelegate.m */,
-				C2716A911A93F2CF00758B17 /* FirstViewController.h */,
-				C2716A921A93F2CF00758B17 /* FirstViewController.m */,
+				C2716A911A93F2CF00758B17 /* HomeViewController.h */,
+				C2AEFAB81AF3CA8D00740285 /* InfoViewController.h */,
+				C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */,
+				C2716A921A93F2CF00758B17 /* HomeViewController.m */,
 				C2716A941A93F2CF00758B17 /* MusicViewController.h */,
 				C2716A951A93F2CF00758B17 /* MusicViewController.m */,
 				C2716AC21A95289400758B17 /* VideosViewController.h */,
@@ -292,10 +297,11 @@
 				C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */,
 				C2538EAE1AEEA44500F703E9 /* VideoPickerViewController.m in Sources */,
 				C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */,
-				C2716A931A93F2CF00758B17 /* FirstViewController.m in Sources */,
+				C2716A931A93F2CF00758B17 /* HomeViewController.m in Sources */,
 				C22D832F1AE7EAC800B61755 /* BioViewController.m in Sources */,
 				C2716A8D1A93F2CF00758B17 /* main.m in Sources */,
 				C240DCB91AF1369A002C7AB9 /* Reachability.m in Sources */,
+				C2AEFABA1AF3CA8D00740285 /* InfoViewController.m in Sources */,
 				C2716AC01A95286C00758B17 /* VideosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
