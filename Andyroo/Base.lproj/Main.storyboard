@@ -647,8 +647,9 @@ Andyroo</string>
                                         <exclude reference="E3O-TL-8LR"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
+                                    <rect key="frame" x="207" y="16" width="181" height="45"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AndyrooBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Kp4-cW-Nid">
