@@ -51,6 +51,7 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     // Set the picker view to the currently selected video.
     NSUInteger index = 0;
