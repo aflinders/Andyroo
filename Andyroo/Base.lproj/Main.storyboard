@@ -647,9 +647,8 @@ Andyroo</string>
                                         <exclude reference="E3O-TL-8LR"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
-                                    <rect key="frame" x="207" y="16" width="181" height="45"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AndyrooBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Kp4-cW-Nid">
@@ -888,7 +887,7 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
         <image name="AndyrooTourPoster" width="640" height="960"/>
         <image name="ItunesIcon" width="368" height="137"/>
         <image name="YouTube" width="75" height="75"/>
-        <image name="icon-Info" width="512" height="512"/>
+        <image name="icon-Info" width="80" height="80"/>
         <image name="music_note" width="30" height="30"/>
         <image name="pencil" width="30" height="30"/>
         <image name="play button" width="41" height="41"/>
