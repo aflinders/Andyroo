@@ -760,9 +760,6 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                             <constraint firstItem="Ro3-lF-xEH" firstAttribute="centerX" secondItem="dqI-OJ-8s6" secondAttribute="centerX" id="Fzv-ql-AVV"/>
                             <constraint firstItem="UTo-oG-AKd" firstAttribute="leading" secondItem="13N-1g-m2j" secondAttribute="leadingMargin" constant="5" id="IqJ-32-IZa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ihl-BY-g4i" secondAttribute="trailing" constant="5" id="Jur-cI-uaI"/>
-                            <constraint firstItem="Ihl-BY-g4i" firstAttribute="leading" secondItem="UTo-oG-AKd" secondAttribute="trailing" constant="314" id="QKW-jc-HRs">
-                                <variation key="heightClass=regular-widthClass=regular" constant="514"/>
-                            </constraint>
                             <constraint firstItem="6lS-R5-Tf4" firstAttribute="top" secondItem="UTo-oG-AKd" secondAttribute="bottom" constant="5" id="WE4-GR-tDm"/>
                             <constraint firstItem="Ihl-BY-g4i" firstAttribute="top" secondItem="UTo-oG-AKd" secondAttribute="top" id="Z9o-q7-a1Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fvC-2b-wkh" secondAttribute="trailing" constant="5" id="aCJ-OH-jSh"/>
