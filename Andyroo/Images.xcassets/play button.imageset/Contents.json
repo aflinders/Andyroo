@@ -7,8 +7,7 @@
     },
     {
       "idiom" : "iphone",
-      "scale" : "2x",
-      "filename" : "play button2x.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",
@@ -18,12 +17,11 @@
     {
       "idiom" : "ipad",
       "scale" : "1x",
-      "filename" : "play button@iPad.png"
+      "filename" : "play button2x.png"
     },
     {
       "idiom" : "ipad",
-      "scale" : "2x",
-      "filename" : "play button@iPad2x.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "watch",

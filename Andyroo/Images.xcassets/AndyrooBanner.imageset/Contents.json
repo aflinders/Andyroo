@@ -7,23 +7,34 @@
     },
     {
       "idiom" : "iphone",
-      "scale" : "2x",
-      "filename" : "AndyrooBanner@2x.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",
-      "scale" : "3x",
-      "filename" : "AndyrooBanner@3x.png"
+      "scale" : "3x"
     },
     {
       "idiom" : "ipad",
       "scale" : "1x",
-      "filename" : "AndyrooBanner@iPad.png"
+      "filename" : "AndyrooBanner@2x.png"
     },
     {
       "idiom" : "ipad",
-      "scale" : "2x",
-      "filename" : "AndyrooBanner@iPad2x.png"
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "watch",
+      "screenWidth" : "{130,145}",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "watch",
+      "screenWidth" : "{146,165}",
+      "scale" : "2x"
     }
   ],
   "info" : {

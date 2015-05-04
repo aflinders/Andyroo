@@ -114,7 +114,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc1-jX-jhJ">
                                 <rect key="frame" x="21" y="65" width="568" height="530"/>
                                 <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Andyroo iOS application
+                                <string key="text">Andyroo iOS application
 
 The Andyroo application is for those who are interested in my music band Andyroo. I don't believe there are any or many apps dedicated to the music of a single music group, and this is a way for me to demo my music and videos, offer a musical biography and provide band updates and tour information.
 
@@ -123,7 +123,7 @@ The Andyroo app consists of 4 tabbed views: Home, Music, Videos, and Bio. The Mu
 The best feature of this free application is that it embeds high-quality digital recordings of 3 of my songs. In the next version, the Andyroo app will synchronize with my Andyroo.com web domain to download 3 different songs on a rotating basis for variety. The next version will also feature a Tour+ tab view that pulls band updates and tour information, and the music video list will also be updated and expanded through synchronization with Andyroo.com. Enjoy!
 
 Love,
-Andyroo</mutableString>
+Andyroo</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -708,15 +708,6 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-BY-g4i">
-                                <rect key="frame" x="195" y="471" width="384" height="75"/>
-                                <state key="normal" image="YouTube">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openAndyrooYouTube:" destination="PUX-dq-lVT" eventType="touchUpInside" id="aOB-0m-jAl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTo-oG-AKd">
                                 <rect key="frame" x="21" y="471" width="169" height="75"/>
                                 <state key="normal" image="Andyroo.com">
@@ -752,6 +743,15 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-BY-g4i">
+                                <rect key="frame" x="504" y="471" width="75" height="75"/>
+                                <state key="normal" image="YouTube">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openAndyrooYouTube:" destination="PUX-dq-lVT" eventType="touchUpInside" id="aOB-0m-jAl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.090196080505847931" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -760,7 +760,9 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                             <constraint firstItem="Ro3-lF-xEH" firstAttribute="centerX" secondItem="dqI-OJ-8s6" secondAttribute="centerX" id="Fzv-ql-AVV"/>
                             <constraint firstItem="UTo-oG-AKd" firstAttribute="leading" secondItem="13N-1g-m2j" secondAttribute="leadingMargin" constant="5" id="IqJ-32-IZa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ihl-BY-g4i" secondAttribute="trailing" constant="5" id="Jur-cI-uaI"/>
-                            <constraint firstItem="Ihl-BY-g4i" firstAttribute="leading" secondItem="UTo-oG-AKd" secondAttribute="trailing" constant="5" id="QKW-jc-HRs"/>
+                            <constraint firstItem="Ihl-BY-g4i" firstAttribute="leading" secondItem="UTo-oG-AKd" secondAttribute="trailing" constant="314" id="QKW-jc-HRs">
+                                <variation key="heightClass=regular-widthClass=regular" constant="514"/>
+                            </constraint>
                             <constraint firstItem="6lS-R5-Tf4" firstAttribute="top" secondItem="UTo-oG-AKd" secondAttribute="bottom" constant="5" id="WE4-GR-tDm"/>
                             <constraint firstItem="Ihl-BY-g4i" firstAttribute="top" secondItem="UTo-oG-AKd" secondAttribute="top" id="Z9o-q7-a1Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fvC-2b-wkh" secondAttribute="trailing" constant="5" id="aCJ-OH-jSh"/>
@@ -785,7 +787,7 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZd-JD-ZMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="1041"/>
+            <point key="canvasLocation" x="366.75" y="1041"/>
         </scene>
         <!--VideoPicker-->
         <scene sceneID="vcY-WL-Cv2">
