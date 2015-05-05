@@ -128,9 +128,9 @@
 			children = (
 				C224E49E1A96AD0F003F5489 /* Base.lproj */,
 				C2716A8E1A93F2CF00758B17 /* AppDelegate.h */,
+				C2716A8F1A93F2CF00758B17 /* AppDelegate.m */,
 				C240DCB71AF1369A002C7AB9 /* Reachability.h */,
 				C240DCB81AF1369A002C7AB9 /* Reachability.m */,
-				C2716A8F1A93F2CF00758B17 /* AppDelegate.m */,
 				C2716A911A93F2CF00758B17 /* HomeViewController.h */,
 				C2AEFAB81AF3CA8D00740285 /* InfoViewController.h */,
 				C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */,
@@ -143,12 +143,12 @@
 				C2538EAD1AEEA44500F703E9 /* VideoPickerViewController.m */,
 				C22D832D1AE7EAC800B61755 /* BioViewController.h */,
 				C22D832E1AE7EAC800B61755 /* BioViewController.m */,
+				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
+				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
 				C2716A971A93F2CF00758B17 /* Main.storyboard */,
 				C2716A9A1A93F2CF00758B17 /* Images.xcassets */,
 				C2716A9C1A93F2CF00758B17 /* LaunchScreen.xib */,
 				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
-				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
-				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
 			);
 			path = Andyroo;
 			sourceTree = "<group>";
