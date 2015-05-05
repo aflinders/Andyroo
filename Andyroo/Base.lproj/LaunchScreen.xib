@@ -16,16 +16,35 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="5vJ-CW-6Ng" secondAttribute="height" multiplier="2:3" id="LFx-ZH-8zT"/>
                     </constraints>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="LFx-ZH-8zT"/>
+                        </mask>
+                    </variation>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="5vJ-CW-6Ng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B6h-bC-lTV"/>
                 <constraint firstAttribute="bottom" secondItem="5vJ-CW-6Ng" secondAttribute="bottom" id="VQi-BY-m02"/>
                 <constraint firstItem="5vJ-CW-6Ng" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vsd-Wi-WXb"/>
+                <constraint firstAttribute="trailing" secondItem="5vJ-CW-6Ng" secondAttribute="trailing" id="p0O-DB-zJH"/>
                 <constraint firstItem="5vJ-CW-6Ng" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sx8-6I-4hA"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="B6h-bC-lTV"/>
+                    <exclude reference="p0O-DB-zJH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="B6h-bC-lTV"/>
+                    <include reference="p0O-DB-zJH"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
