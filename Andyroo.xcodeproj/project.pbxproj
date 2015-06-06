@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C200EB731B22602700052758 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C200EB711B22602700052758 /* Core_Data.xcdatamodeld */; };
+		C200EB761B22662F00052758 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C200EB751B22662F00052758 /* Address.m */; };
 		C224E4A31A96AD0F003F5489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */; };
 		C224E4A41A96AD0F003F5489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */; };
 		C224E4A51A96AD0F003F5489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C224E4A11A96AD0F003F5489 /* Main.storyboard */; };
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C200EB721B22602700052758 /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
+		C200EB741B22662F00052758 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		C200EB751B22662F00052758 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
 		C224E4A01A96AD0F003F5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C224E4A21A96AD0F003F5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
@@ -153,11 +158,14 @@
 				C2538EAD1AEEA44500F703E9 /* VideoPickerViewController.m */,
 				C22D832D1AE7EAC800B61755 /* BioViewController.h */,
 				C22D832E1AE7EAC800B61755 /* BioViewController.m */,
+				C200EB741B22662F00052758 /* Address.h */,
+				C200EB751B22662F00052758 /* Address.m */,
 				C2AEFABE1AFBDD9D00740285 /* NewsItem.h */,
 				C2AEFABF1AFBDD9D00740285 /* NewsItem.m */,
 				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
 				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
 				C2716A971A93F2CF00758B17 /* Main.storyboard */,
+				C200EB711B22602700052758 /* Core_Data.xcdatamodeld */,
 				C2716A9A1A93F2CF00758B17 /* Images.xcassets */,
 				C2716A9C1A93F2CF00758B17 /* LaunchScreen.xib */,
 				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
@@ -302,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C200EB731B22602700052758 /* Core_Data.xcdatamodeld in Sources */,
 				C2716A961A93F2CF00758B17 /* MusicViewController.m in Sources */,
 				C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */,
 				C2538EAE1AEEA44500F703E9 /* VideoPickerViewController.m in Sources */,
+				C200EB761B22662F00052758 /* Address.m in Sources */,
 				C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */,
 				C257260C1AFFB2AF00FC75A9 /* TourTableViewController.m in Sources */,
 				C2716A931A93F2CF00758B17 /* HomeViewController.m in Sources */,
@@ -543,6 +553,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C200EB711B22602700052758 /* Core_Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C200EB721B22602700052758 /* Core_Data.xcdatamodel */,
+			);
+			currentVersion = C200EB721B22602700052758 /* Core_Data.xcdatamodel */;
+			path = Core_Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C2716A7F1A93F2CF00758B17 /* Project object */;
 }

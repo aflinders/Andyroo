@@ -8,6 +8,7 @@
 
 #import "TourTableViewController.h"
 #import "NewsItem.h"
+#import "Address.h"
 
 @interface TourTableViewController ()
 
@@ -53,11 +54,14 @@
     item.type = Performance;
     item.headline = @"Midway Cafe in Jamaica Plain, Boston, USA.";
     item.info = @"Andyroo plays the Midway Cafe in Jamaica Plain, Boston, USA. Doors open at 8:30 p.m.";
-    item.country = @"USA";
-    item.streetAddress = @"3496 Washington Street";
-    item.city = @"Jamaica Plain, Boston";
-    item.state = @"Massachusetts";
-    item.postalCode = @"02130";
+    
+    Address *address = [[Address alloc] init];
+    address.number = 3496;
+    address.street = @"Washington Street";
+    address.city = @"Jamaica Plain, Boston";
+    address.state = @"Massachusetts";
+    address.postalCode = @"02130";
+    item.address = address;
     
     startTimeString = @"Wed, 20 May 2015 20:30:00 -0500";
     endTimeString = nil;
@@ -69,11 +73,14 @@
     item.type = Performance;
     item.headline = @"T.T. the Bear's in Cambridge, MA, USA.";
     item.info = @"Andyroo plays the T.T. the Bear's in Cambridge, MA, USA. Doors open at 8:30 p.m.";
-    item.country = @"USA";
-    item.streetAddress = @"3496 Washington Street";
-    item.city = @"Jamaica Plain, Boston";
-    item.state = @"Massachusetts";
-    item.postalCode = @"02130";
+    
+    address = [[Address alloc] init];
+    address.number = 3496;
+    address.street = @"Washington Street";
+    address.city = @"Jamaica Plain, Boston";
+    address.state = @"Massachusetts";
+    address.postalCode = @"02130";
+    item.address = address;
     
     startTimeString = @"Wed, 20 May 2015 20:30:00 -0500";
     endTimeString = nil;

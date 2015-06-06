@@ -10,6 +10,4 @@
 
 @interface TourTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
-
 @end

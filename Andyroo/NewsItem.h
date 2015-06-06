@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Address.h"
 
 typedef enum : NSInteger {
     News = 0,
@@ -20,6 +21,7 @@ typedef enum : NSInteger {
 @property (copy, nonatomic) NSString *info;
 @property (copy, nonatomic) NSDate *startTime;
 @property (copy, nonatomic) NSDate *endTime;
+@property (strong, nonatomic) Address *address;
 @property (copy, nonatomic) NSString *country;
 @property (copy, nonatomic) NSString *streetAddress;
 @property (copy, nonatomic) NSString *streetAddress2;
