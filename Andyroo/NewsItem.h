@@ -14,7 +14,7 @@ typedef enum : NSInteger {
     Performance,
 } ItemType;
 
-@interface NewsItem : NSObject
+@interface NewsItem : NSManagedObject
 
 @property (assign, nonatomic) NSInteger type;
 @property (copy, nonatomic) NSString *headline;
@@ -22,12 +22,6 @@ typedef enum : NSInteger {
 @property (copy, nonatomic) NSDate *startTime;
 @property (copy, nonatomic) NSDate *endTime;
 @property (strong, nonatomic) Address *address;
-@property (copy, nonatomic) NSString *country;
-@property (copy, nonatomic) NSString *streetAddress;
-@property (copy, nonatomic) NSString *streetAddress2;
-@property (copy, nonatomic) NSString *city;
-@property (copy, nonatomic) NSString *state;
-@property (copy, nonatomic) NSString *postalCode;
 @property (copy, nonatomic) NSString *phone;
 @property (copy, nonatomic) NSString *websiteURL;
 

@@ -10,5 +10,13 @@
 
 @implementation NewsItem
 
+@synthesize type = _type;
+@synthesize headline = _headline;
+@synthesize info = _info;
+@synthesize startTime = _startTime;
+@synthesize endTime = _endTime;
+@synthesize address = _address;
+@synthesize phone = _phone;
+@synthesize websiteURL = _websiteURL;
 
 @end

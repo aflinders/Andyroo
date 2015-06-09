@@ -10,4 +10,12 @@
 
 @implementation Address
 
+@synthesize country = _country;
+@synthesize postalCode = _postalCode;
+@synthesize unit = _unit;
+@synthesize state = _state;
+@synthesize city = _city;
+@synthesize street = _street;
+@synthesize number = _number;
+
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Address : NSObject
+@interface Address : NSManagedObject
 
 @property (assign, nonatomic) NSInteger number;
 @property (copy, nonatomic) NSString *street;

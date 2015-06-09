@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E29781EE-8211-4286-A5B4-F6AD7A6E1AEA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Andyroo</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>FD2742CDA56068583FD1B54899DFD69F8FE2FE58</key>
 		<string>https://github.com/aflinders/Andyroo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Andyroo.xcodeproj</string>
+	<string>Andyroo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FD2742CDA56068583FD1B54899DFD69F8FE2FE58</key>
