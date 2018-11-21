@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F54512221A595420056B6C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F54512021A595420056B6C3 /* AppDelegate.m */; };
 		C200EB731B22602700052758 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C200EB711B22602700052758 /* Core_Data.xcdatamodeld */; };
 		C200EB761B22662F00052758 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C200EB751B22662F00052758 /* Address.m */; };
-		C224E4A31A96AD0F003F5489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */; };
-		C224E4A41A96AD0F003F5489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */; };
-		C224E4A51A96AD0F003F5489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C224E4A11A96AD0F003F5489 /* Main.storyboard */; };
-		C224E4A61A96AD0F003F5489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C224E4A11A96AD0F003F5489 /* Main.storyboard */; };
 		C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C224E4AB1A96B073003F5489 /* AudioPlayer.m */; };
 		C224E4AD1A96B073003F5489 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C224E4AB1A96B073003F5489 /* AudioPlayer.m */; };
 		C224E4AE1A96CF60003F5489 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A951A93F2CF00758B17 /* MusicViewController.m */; };
@@ -21,7 +18,6 @@
 		C2538EAE1AEEA44500F703E9 /* VideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2538EAD1AEEA44500F703E9 /* VideoPickerViewController.m */; };
 		C257260C1AFFB2AF00FC75A9 /* TourTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C257260B1AFFB2AF00FC75A9 /* TourTableViewController.m */; };
 		C2716A8D1A93F2CF00758B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8C1A93F2CF00758B17 /* main.m */; };
-		C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A8F1A93F2CF00758B17 /* AppDelegate.m */; };
 		C2716A931A93F2CF00758B17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A921A93F2CF00758B17 /* HomeViewController.m */; };
 		C2716A961A93F2CF00758B17 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2716A951A93F2CF00758B17 /* MusicViewController.m */; };
 		C2716A991A93F2CF00758B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2716A971A93F2CF00758B17 /* Main.storyboard */; };
@@ -48,11 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F54511D21A209FB0056B6C3 /* Andyroo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Andyroo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F54512021A595420056B6C3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F54512121A595420056B6C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C200EB721B22602700052758 /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		C200EB741B22662F00052758 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
 		C200EB751B22662F00052758 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
-		C224E4A01A96AD0F003F5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		C224E4A21A96AD0F003F5489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
 		C224E4AB1A96B073003F5489 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		C22D832D1AE7EAC800B61755 /* BioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BioViewController.h; sourceTree = "<group>"; };
@@ -67,8 +64,6 @@
 		C2716A871A93F2CF00758B17 /* Andyroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Andyroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2716A8B1A93F2CF00758B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2716A8C1A93F2CF00758B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2716A8E1A93F2CF00758B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C2716A8F1A93F2CF00758B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2716A911A93F2CF00758B17 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C2716A921A93F2CF00758B17 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C2716A941A93F2CF00758B17 /* MusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
@@ -108,13 +103,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C224E49E1A96AD0F003F5489 /* Base.lproj */ = {
+		2F54512321A595B70056B6C3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */,
-				C224E4A11A96AD0F003F5489 /* Main.storyboard */,
+				C22D832D1AE7EAC800B61755 /* BioViewController.h */,
+				C22D832E1AE7EAC800B61755 /* BioViewController.m */,
+				C2716A911A93F2CF00758B17 /* HomeViewController.h */,
+				C2716A921A93F2CF00758B17 /* HomeViewController.m */,
+				C257260A1AFFB2AF00FC75A9 /* TourTableViewController.h */,
+				C257260B1AFFB2AF00FC75A9 /* TourTableViewController.m */,
+				C2AEFAB81AF3CA8D00740285 /* InfoViewController.h */,
+				C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */,
+				C2716A941A93F2CF00758B17 /* MusicViewController.h */,
+				C2716A951A93F2CF00758B17 /* MusicViewController.m */,
+				C2716AC21A95289400758B17 /* VideosViewController.h */,
+				C2716ABF1A95286C00758B17 /* VideosViewController.m */,
+				C2538EAC1AEEA44500F703E9 /* VideoPickerViewController.h */,
+				C2538EAD1AEEA44500F703E9 /* VideoPickerViewController.m */,
 			);
-			path = Base.lproj;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2F54512421A596A10056B6C3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C2716A971A93F2CF00758B17 /* Main.storyboard */,
+				C2716A9A1A93F2CF00758B17 /* Images.xcassets */,
+				C2716A9C1A93F2CF00758B17 /* LaunchScreen.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F54512521A596DC0056B6C3 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */,
+				C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */,
+				C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		C2716A7E1A93F2CF00758B17 = {
@@ -139,35 +166,20 @@
 		C2716A891A93F2CF00758B17 /* Andyroo */ = {
 			isa = PBXGroup;
 			children = (
-				C224E49E1A96AD0F003F5489 /* Base.lproj */,
-				C2716A8E1A93F2CF00758B17 /* AppDelegate.h */,
-				C2716A8F1A93F2CF00758B17 /* AppDelegate.m */,
+				2F54512521A596DC0056B6C3 /* Audio */,
+				2F54512421A596A10056B6C3 /* UI */,
+				2F54512321A595B70056B6C3 /* View Controllers */,
+				2F54512121A595420056B6C3 /* AppDelegate.h */,
+				2F54512021A595420056B6C3 /* AppDelegate.m */,
 				C240DCB71AF1369A002C7AB9 /* Reachability.h */,
 				C240DCB81AF1369A002C7AB9 /* Reachability.m */,
-				C2716A911A93F2CF00758B17 /* HomeViewController.h */,
-				C2716A921A93F2CF00758B17 /* HomeViewController.m */,
-				C257260A1AFFB2AF00FC75A9 /* TourTableViewController.h */,
-				C257260B1AFFB2AF00FC75A9 /* TourTableViewController.m */,
-				C2AEFAB81AF3CA8D00740285 /* InfoViewController.h */,
-				C2AEFAB91AF3CA8D00740285 /* InfoViewController.m */,
-				C2716A941A93F2CF00758B17 /* MusicViewController.h */,
-				C2716A951A93F2CF00758B17 /* MusicViewController.m */,
-				C2716AC21A95289400758B17 /* VideosViewController.h */,
-				C2716ABF1A95286C00758B17 /* VideosViewController.m */,
-				C2538EAC1AEEA44500F703E9 /* VideoPickerViewController.h */,
-				C2538EAD1AEEA44500F703E9 /* VideoPickerViewController.m */,
-				C22D832D1AE7EAC800B61755 /* BioViewController.h */,
-				C22D832E1AE7EAC800B61755 /* BioViewController.m */,
 				C200EB741B22662F00052758 /* Address.h */,
 				C200EB751B22662F00052758 /* Address.m */,
 				C2AEFABE1AFBDD9D00740285 /* NewsItem.h */,
 				C2AEFABF1AFBDD9D00740285 /* NewsItem.m */,
 				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
 				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
-				C2716A971A93F2CF00758B17 /* Main.storyboard */,
 				C200EB711B22602700052758 /* Core_Data.xcdatamodeld */,
-				C2716A9A1A93F2CF00758B17 /* Images.xcassets */,
-				C2716A9C1A93F2CF00758B17 /* LaunchScreen.xib */,
 				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
 			);
 			path = Andyroo;
@@ -176,9 +188,7 @@
 		C2716A8A1A93F2CF00758B17 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2C3741F1AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 */,
-				C2C374201AB9CD5C0078CA3A /* Wizard Love MP3.mp3 */,
-				C2E0A2331AA7C163009ACB15 /* Booster Buddy MP3.mp3 */,
+				2F54511D21A209FB0056B6C3 /* Andyroo-Bridging-Header.h */,
 				C2716A8B1A93F2CF00758B17 /* Info.plist */,
 				C2716A8C1A93F2CF00758B17 /* main.m */,
 			);
@@ -252,6 +262,7 @@
 					C2716A861A93F2CF00758B17 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 99DH5XWYQ2;
+						LastSwiftMigration = 1010;
 					};
 					C2716AA21A93F2CF00758B17 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -284,10 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C374221AB9CD5C0078CA3A /* Wizard Love MP3.mp3 in Resources */,
-				C224E4A51A96AD0F003F5489 /* Main.storyboard in Resources */,
 				C2716A991A93F2CF00758B17 /* Main.storyboard in Resources */,
 				C2716A9E1A93F2CF00758B17 /* LaunchScreen.xib in Resources */,
-				C224E4A31A96AD0F003F5489 /* LaunchScreen.xib in Resources */,
 				C2C374211AB9CD5C0078CA3A /* Monkeys Bedazzling MP3.mp3 in Resources */,
 				C2716A9B1A93F2CF00758B17 /* Images.xcassets in Resources */,
 				C2E0A2341AA7C163009ACB15 /* Booster Buddy MP3.mp3 in Resources */,
@@ -298,8 +307,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C224E4A41A96AD0F003F5489 /* LaunchScreen.xib in Resources */,
-				C224E4A61A96AD0F003F5489 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +322,6 @@
 				C224E4AC1A96B073003F5489 /* AudioPlayer.m in Sources */,
 				C2538EAE1AEEA44500F703E9 /* VideoPickerViewController.m in Sources */,
 				C200EB761B22662F00052758 /* Address.m in Sources */,
-				C2716A901A93F2CF00758B17 /* AppDelegate.m in Sources */,
 				C257260C1AFFB2AF00FC75A9 /* TourTableViewController.m in Sources */,
 				C2716A931A93F2CF00758B17 /* HomeViewController.m in Sources */,
 				C22D832F1AE7EAC800B61755 /* BioViewController.m in Sources */,
@@ -324,6 +330,7 @@
 				C2AEFAC01AFBDD9D00740285 /* NewsItem.m in Sources */,
 				C2AEFABA1AF3CA8D00740285 /* InfoViewController.m in Sources */,
 				C2716AC01A95286C00758B17 /* VideosViewController.m in Sources */,
+				2F54512221A595420056B6C3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,22 +356,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C224E49F1A96AD0F003F5489 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C224E4A01A96AD0F003F5489 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		C224E4A11A96AD0F003F5489 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C224E4A21A96AD0F003F5489 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C2716A971A93F2CF00758B17 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -466,11 +457,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 99DH5XWYQ2;
 				INFOPLIST_FILE = Andyroo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Andyroo/Andyroo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -479,11 +475,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 99DH5XWYQ2;
 				INFOPLIST_FILE = Andyroo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Andyroo/Andyroo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

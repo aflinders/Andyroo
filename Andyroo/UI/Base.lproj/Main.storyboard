@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -15,19 +18,19 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AndyrooTourPoster" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-1j-GPb">
-                                <rect key="frame" x="100" y="0.0" width="400" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2015. ANDYROO. All rights reserved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNg-6f-oxb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copyright 2015. ANDYROO. All rights reserved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNg-6f-oxb">
                                 <rect key="frame" x="147" y="526" width="306" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-xJ-N88">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-xJ-N88">
                                 <rect key="frame" x="538" y="477" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3uo-Y2-ME0"/>
@@ -36,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="60" id="tJD-z0-muR"/>
                                 </constraints>
                                 <state key="normal" image="Info-icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -57,7 +60,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RMk-1j-GPb" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="B9M-7B-2po"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hWQ-xJ-N88" secondAttribute="trailing" constant="6" id="MYS-Pf-w78"/>
@@ -95,14 +98,14 @@
                         <viewControllerLayoutGuide type="bottom" id="fRv-9b-seS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kd6-bQ-7RI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz2-y3-81x">
-                                <rect key="frame" x="552" y="30" width="38" height="30"/>
+                                <rect key="frame" x="327" y="30" width="38" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
@@ -111,9 +114,9 @@
                                     <segue destination="lTX-3P-Jm1" kind="unwind" unwindAction="unwindToHome:" id="9E3-hm-Ti7"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc1-jX-jhJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc1-jX-jhJ">
                                 <rect key="frame" x="21" y="65" width="568" height="530"/>
-                                <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Andyroo iOS application
 
 The Andyroo application is for those who are interested in my music band Andyroo. I don't believe there are any or many apps dedicated to the music of a single music group, and this is a way for me to demo my music and videos, offer a musical biography and provide band updates and tour information.
@@ -124,7 +127,7 @@ The best feature of this free application is that it embeds high-quality digital
 
 Love,
 Andyroo</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -132,7 +135,7 @@ Andyroo</string>
                                 </variation>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.96241960209999999" blue="0.4038219656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fc1-jX-jhJ" firstAttribute="top" secondItem="hz2-y3-81x" secondAttribute="bottom" constant="5" id="4WD-24-d9o"/>
                             <constraint firstItem="hz2-y3-81x" firstAttribute="top" secondItem="6dp-lL-CGa" secondAttribute="bottom" constant="10" id="HLY-LO-ENR"/>
@@ -160,13 +163,13 @@ Andyroo</string>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booster Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coU-Ue-lxt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Booster Buddy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coU-Ue-lxt">
                                 <rect key="frame" x="19" y="97" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.94509810209274292" green="0.98431378602981567" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.93370312452316284" green="0.99964410066604614" blue="0.039547238498926163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -179,7 +182,7 @@ Andyroo</string>
                                     <constraint firstAttribute="height" constant="70" id="i4R-Qx-Wln"/>
                                 </constraints>
                                 <state key="normal" image="play button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -197,19 +200,19 @@ Andyroo</string>
                                     <action selector="playAudioPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Aad-Vi-vfD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-J8-UZx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-J8-UZx">
                                 <rect key="frame" x="67" y="234" width="30" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wizard Love" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDT-Lc-CzO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wizard Love" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDT-Lc-CzO">
                                 <rect key="frame" x="18" y="191" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.21176472306251526" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.98590373992919922" green="0.0" blue="0.16362681984901428" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -222,7 +225,7 @@ Andyroo</string>
                                     <constraint firstAttribute="height" constant="70" id="sSP-hF-iWJ"/>
                                 </constraints>
                                 <state key="normal" image="play button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -240,7 +243,7 @@ Andyroo</string>
                                     <action selector="playAudioPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="m98-5z-cVf"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-5b-hdb">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-5b-hdb">
                                 <rect key="frame" x="103" y="228" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="Rvp-gh-Evi"/>
@@ -301,37 +304,37 @@ Andyroo</string>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-GZ-6kC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-GZ-6kC">
                                 <rect key="frame" x="252" y="329" width="36" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wc-Ny-ttI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wc-Ny-ttI">
                                 <rect key="frame" x="67" y="330" width="30" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-pI-FUk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg4-pI-FUk">
                                 <rect key="frame" x="252" y="138" width="36" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-rK-Auh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-0:37" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-rK-Auh">
                                 <rect key="frame" x="251" y="234" width="36" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -344,7 +347,7 @@ Andyroo</string>
                                     <constraint firstAttribute="height" constant="70" id="V5k-ur-ZGd"/>
                                 </constraints>
                                 <state key="normal" image="play button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -363,12 +366,12 @@ Andyroo</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-sR-eLh">
-                                <rect key="frame" x="204" y="27" width="64" height="27"/>
+                                <rect key="frame" x="204" y="26.5" width="64" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="GBq-xR-Nve"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -382,16 +385,16 @@ Andyroo</string>
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-Y8-vaP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVS-Y8-vaP">
                                 <rect key="frame" x="68" y="140" width="30" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-OC-poT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-OC-poT">
                                 <rect key="frame" x="224" y="406" width="368" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="1pZ-97-RG2"/>
@@ -408,8 +411,8 @@ Andyroo</string>
                                     <constraint firstAttribute="height" constant="95" id="isq-9j-fi7"/>
                                 </constraints>
                                 <state key="normal" image="ItunesIcon">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -451,7 +454,7 @@ Andyroo</string>
                                     <action selector="openAndyrooiTunes:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2Lw-uZ-rfQ"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGL-nH-9em">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGL-nH-9em">
                                 <rect key="frame" x="104" y="132" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="CMq-ok-4Pl"/>
@@ -473,7 +476,7 @@ Andyroo</string>
                                     <action selector="userIsScrubbing:" destination="8rJ-Kc-sve" eventType="touchDragInside" id="FHA-Rl-3SS"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hio-zt-rol">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hio-zt-rol">
                                 <rect key="frame" x="103" y="324" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="PpL-HB-p9f"/>
@@ -495,17 +498,17 @@ Andyroo</string>
                                     <action selector="userIsScrubbing:" destination="8rJ-Kc-sve" eventType="touchDragInside" id="l1a-aB-vPH"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monkeys Bedazzling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-go-2Sh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monkeys Bedazzling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-go-2Sh">
                                 <rect key="frame" x="18" y="287" width="158" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.86274516582489014" blue="0.070588238537311554" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.1123100072145462" green="0.85498762130737305" blue="0.064229913055896759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.25490197539329529" green="0.0" blue="0.75294125080108643" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.19015815854072571" green="0.0" blue="0.69945013523101807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ijs-GZ-6kC" firstAttribute="centerY" secondItem="hio-zt-rol" secondAttribute="centerY" constant="-1" id="0Zx-4M-yEJ"/>
                             <constraint firstItem="hio-zt-rol" firstAttribute="centerY" secondItem="3Wc-Ny-ttI" secondAttribute="centerY" id="1Dy-CG-tCT"/>
@@ -610,7 +613,7 @@ Andyroo</string>
                         <viewControllerLayoutGuide type="bottom" id="Pd8-Px-DAm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nub-d4-bti" customClass="ADBannerView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AndyrooBanner" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-ud-Cx9">
@@ -653,12 +656,12 @@ Andyroo</string>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour+" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-jI-chr">
-                                <rect key="frame" x="204" y="27" width="60" height="27"/>
+                                <rect key="frame" x="204" y="27" width="59.5" height="26.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="O9F-EQ-g2Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -672,63 +675,73 @@ Andyroo</string>
                                     </mask>
                                 </variation>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8SN-uU-o1t">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8SN-uU-o1t">
                                 <rect key="frame" x="21" y="97" width="558" height="449"/>
-                                <color key="backgroundColor" red="0.41200724160000002" green="0.21270722910000001" blue="0.59250710230000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="0.37356268770000001" green="0.2368279623" blue="0.56419665399999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.41200724160000002" green="0.21270722910000001" blue="0.59250710230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.37356268770000001" green="0.2368279623" blue="0.56419665399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Performance" textLabel="ZXB-lI-nC5" detailTextLabel="w2n-v6-cGW" imageView="INa-Nw-1mE" style="IBUITableViewCellStyleSubtitle" id="Tj3-ML-M8e">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Performance" textLabel="ZXB-lI-nC5" detailTextLabel="w2n-v6-cGW" imageView="INa-Nw-1mE" style="IBUITableViewCellStyleSubtitle" id="Tj3-ML-M8e">
+                                        <rect key="frame" x="0.0" y="22" width="558" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tj3-ML-M8e" id="3jI-uG-fqy">
+                                            <rect key="frame" x="0.0" y="0.0" width="558" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label multipleTouchEnabled="YES" contentMode="left" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZXB-lI-nC5">
+                                                    <rect key="frame" x="60" y="6" width="37" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w2n-v6-cGW">
+                                                    <rect key="frame" x="60" y="25.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Piano-icon" id="INa-Nw-1mE">
+                                                    <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.68369409537099191" green="0.34728353692936154" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.68369409537099191" green="0.34728353692936154" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsItem" textLabel="HYO-N5-9F8" detailTextLabel="p34-vN-9sG" imageView="1l0-E6-Isu" style="IBUITableViewCellStyleSubtitle" id="T9r-Ce-JJ5">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsItem" textLabel="HYO-N5-9F8" detailTextLabel="p34-vN-9sG" imageView="1l0-E6-Isu" style="IBUITableViewCellStyleSubtitle" id="T9r-Ce-JJ5">
+                                        <rect key="frame" x="0.0" y="66" width="558" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T9r-Ce-JJ5" id="0Kl-1m-OV8">
+                                            <rect key="frame" x="0.0" y="0.0" width="558" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HYO-N5-9F8">
+                                                    <rect key="frame" x="60" y="6" width="31.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.072128762469999996" green="0.5955452967" blue="0.046023564980000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.072128762469999996" green="0.5955452967" blue="0.046023564980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p34-vN-9sG">
+                                                    <rect key="frame" x="60" y="25.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.072128762469999996" green="0.5955452967" blue="0.046023564980000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.072128762469999996" green="0.5955452967" blue="0.046023564980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="info-icon2" id="1l0-E6-Isu">
+                                                    <rect key="frame" x="15" y="6" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.07212876247139019" green="0.59554529671717171" blue="0.046023564980823391" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.07212876247139019" green="0.59554529671717171" blue="0.046023564980823391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -739,7 +752,7 @@ Andyroo</string>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.37356268768757145" green="0.23682796227465736" blue="0.56419665404040398" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.37356268768757145" green="0.23682796227465736" blue="0.56419665404040398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CnS-ud-Cx9" firstAttribute="top" secondItem="nub-d4-bti" secondAttribute="top" constant="5" id="Gpt-Nc-Qrf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8SN-uU-o1t" secondAttribute="trailing" constant="5" id="Gqq-uc-uit"/>
@@ -769,7 +782,7 @@ Andyroo</string>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -792,16 +805,16 @@ Andyroo</string>
                         <viewControllerLayoutGuide type="bottom" id="ZhK-Gh-ZbS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4eO-7J-aZs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPR-f3-sar">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Biography" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPR-f3-sar">
                                 <rect key="frame" x="207" y="26" width="98" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="133" id="E3O-TL-8LR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -812,12 +825,12 @@ Andyroo</string>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AndyrooBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Kp4-cW-Nid">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AndyrooBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Kp4-cW-Nid">
                                 <rect key="frame" x="5" y="5" width="194" height="80"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-MJ-ydD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-MJ-ydD">
                                 <rect key="frame" x="21" y="107" width="558" height="439"/>
-                                <color key="backgroundColor" red="0.43529415129999999" green="0.0" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.35487717390060425" green="0.0" blue="0.095776781439781189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">ANDYROO (Andrew Flinders) was born in Berkeley, California and started playing piano at an early age, earning recognition for his playing. In high school, Andrew graduated from the Harley School and studied piano and chamber music at the Eastman School of Music in Rochester, New York.  Andrew attended Oberlin College in Ohio, where he earned his B.A. in piano performance.  After music school, Andrew invested in an electronic music recording studio (4-track cassette recorder, drum machine, effects unit and several keyboards) and realized his passion for creating his own music. 
 
 For several years, Andrew put his musical endeavors on hold to pursue studies in math and computer science, at New York University, CUNY Queens College, SUNY Binghamton, and Brown University, where he earned his master's degree (Sc.M.) in computer science on full scholarship.  Andrew has worked with / for Cisco Systems, Martha Stewart, Xerox, Chase Manhattan Bank, JP Morgan, Modulo Systems, Patientkeeper, Rochester Public Schools, Lawyers Cooperative Publishing, Gannett Newspapers.
@@ -828,7 +841,7 @@ ANDYROO draws from many different styles of music: classical, jazz, pop, dance, 
 
 ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all over New England and the world.  ANDYROO is rumored to be secretly married to Madonna, Barbara Carrera, and Shirley Bassey.
 ​</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -836,7 +849,7 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                 </variation>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.43529415130615234" green="0.0" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.35487717390060425" green="0.0" blue="0.095776781439781189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZhK-Gh-ZbS" firstAttribute="top" secondItem="wt9-MJ-ydD" secondAttribute="bottom" constant="5" id="1Sh-7S-FcM"/>
                             <constraint firstItem="wt9-MJ-ydD" firstAttribute="leading" secondItem="4eO-7J-aZs" secondAttribute="leadingMargin" constant="5" id="Dt1-bv-YtK"/>
@@ -866,23 +879,23 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                         <viewControllerLayoutGuide type="bottom" id="6lS-R5-Tf4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="13N-1g-m2j">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTo-oG-AKd">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTo-oG-AKd">
                                 <rect key="frame" x="21" y="471" width="169" height="75"/>
                                 <state key="normal" image="Andyroo.com">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="openAndyrooDotCom:" destination="PUX-dq-lVT" eventType="touchUpInside" id="4Vu-Xg-sT0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-OJ-8s6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-OJ-8s6">
                                 <rect key="frame" x="162" y="35" width="277" height="30"/>
                                 <state key="normal" title="Press to pick an ANDYROO music video">
-                                    <color key="titleColor" red="0.0" green="0.86274516582489014" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.99607849120000003" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="0.10530448704957962" green="0.8333466649055481" blue="0.99880897998809814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.13075070083141327" green="1" blue="0.78306365013122559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -891,30 +904,30 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                     <segue destination="ugr-Tu-UkR" kind="presentation" identifier="PickVideo" id="VXH-pP-fgF"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" restorationIdentifier="BoosterBuddyVideo" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-2b-wkh">
+                            <webView contentMode="scaleToFill" misplaced="YES" restorationIdentifier="BoosterBuddyVideo" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-2b-wkh">
                                 <rect key="frame" x="21" y="80" width="558" height="381"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="! No Internet Connection !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-lF-xEH" userLabel="Status Label">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="! No Internet Connection !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-lF-xEH" userLabel="Status Label">
                                 <rect key="frame" x="201" y="260" width="198" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.24270288259963879" blue="0.2799820659618375" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.24270288259963879" blue="0.2799820659618375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-BY-g4i">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-BY-g4i">
                                 <rect key="frame" x="504" y="471" width="75" height="75"/>
                                 <state key="normal" image="YouTube">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="openAndyrooYouTube:" destination="PUX-dq-lVT" eventType="touchUpInside" id="aOB-0m-jAl"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.090196080505847931" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.046003684401512146" green="0.35067585110664368" blue="0.071957424283027649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fvC-2b-wkh" firstAttribute="top" secondItem="dqI-OJ-8s6" secondAttribute="bottom" constant="15" id="92C-Cm-1sk"/>
                             <constraint firstItem="fvC-2b-wkh" firstAttribute="leading" secondItem="13N-1g-m2j" secondAttribute="leadingMargin" constant="5" id="FX1-O4-V4q"/>
@@ -956,13 +969,13 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                         <viewControllerLayoutGuide type="bottom" id="qMW-Kf-QLE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ytd-AV-fd7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF8-Bj-F8k">
                                 <rect key="frame" x="10" y="30" width="48" height="30"/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -971,11 +984,11 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                     <segue destination="SkI-HF-xcn" kind="unwind" unwindAction="unwindToVideo:" id="6VX-Cw-zyX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-z3-VOc">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-z3-VOc">
                                 <rect key="frame" x="555" y="30" width="35" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
@@ -985,23 +998,23 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a music video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csd-FE-dFU">
-                                <rect key="frame" x="224" y="34" width="152" height="21"/>
+                                <rect key="frame" x="111.5" y="34.5" width="152" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 </variation>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0A-fn-fBA">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0A-fn-fBA">
                                 <rect key="frame" x="0.0" y="68" width="600" height="162"/>
-                                <color key="tintColor" red="0.0" green="0.86274516580000005" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.10530448704957962" green="0.8333466649055481" blue="0.99880897998809814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="ugr-Tu-UkR" id="TKG-nz-CHY"/>
                                     <outlet property="delegate" destination="ugr-Tu-UkR" id="xdr-SF-Qxk"/>
                                 </connections>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.86274516580000005" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.10530448704957962" green="0.8333466649055481" blue="0.99880897998809814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r0A-fn-fBA" firstAttribute="top" secondItem="GXM-lp-iYz" secondAttribute="bottom" id="3YR-y9-OYe"/>
                             <constraint firstItem="yF8-Bj-F8k" firstAttribute="centerY" secondItem="csd-FE-dFU" secondAttribute="centerY" id="55Z-zc-Usv"/>
@@ -1054,8 +1067,8 @@ ANDYROO loves to stay fit, and enjoys running, roller skating, and skiing all ov
         <image name="music_note" width="30" height="30"/>
         <image name="pencil" width="30" height="30"/>
         <image name="play button" width="41" height="41"/>
-        <image name="star" width="30" height="29"/>
-        <image name="videos_icon" width="23" height="30"/>
+        <image name="star" width="30" height="28"/>
+        <image name="videos_icon" width="30" height="30"/>
     </resources>
-    <color key="tintColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.68369409540000003" green="0.34728353690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

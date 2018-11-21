@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "iphone",
-      "scale" : "1x",
-      "filename" : "pause button.png"
+      "filename" : "YouTube.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "iphone",
@@ -15,8 +15,8 @@
     },
     {
       "idiom" : "ipad",
-      "scale" : "1x",
-      "filename" : "pause button@iPad-1.png"
+      "filename" : "YouTube_iPad.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "ipad",
@@ -28,13 +28,23 @@
     },
     {
       "idiom" : "watch",
-      "screenWidth" : "{130,145}",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : "<=145"
     },
     {
       "idiom" : "watch",
-      "screenWidth" : "{146,165}",
-      "scale" : "2x"
+      "scale" : "2x",
+      "screen-width" : ">161"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : ">145"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : ">183"
     }
   ],
   "info" : {
