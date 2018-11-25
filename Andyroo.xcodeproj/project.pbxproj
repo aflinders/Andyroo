@@ -169,6 +169,7 @@
 				2F54512521A596DC0056B6C3 /* Audio */,
 				2F54512421A596A10056B6C3 /* UI */,
 				2F54512321A595B70056B6C3 /* View Controllers */,
+				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
 				2F54512121A595420056B6C3 /* AppDelegate.h */,
 				2F54512021A595420056B6C3 /* AppDelegate.m */,
 				C240DCB71AF1369A002C7AB9 /* Reachability.h */,
@@ -180,7 +181,6 @@
 				C224E4AA1A96AFEE003F5489 /* AudioPlayer.h */,
 				C224E4AB1A96B073003F5489 /* AudioPlayer.m */,
 				C200EB711B22602700052758 /* Core_Data.xcdatamodeld */,
-				C2716A8A1A93F2CF00758B17 /* Supporting Files */,
 			);
 			path = Andyroo;
 			sourceTree = "<group>";
